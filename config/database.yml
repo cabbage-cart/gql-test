@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: gql_test_production
-  username: gql_test
-  password: <%= ENV['GQL_TEST_DATABASE_PASSWORD'] %>
+  database: <%= ENV['DATABASE_URL'] %>
+  # username: gql_test
+  # password: <%= ENV['GQL_TEST_DATABASE_PASSWORD'] %>
